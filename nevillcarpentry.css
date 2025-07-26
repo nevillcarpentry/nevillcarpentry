@@ -1,0 +1,179 @@
+ /* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2e2e2e;
+  color: #bbb;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #555;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 auto;
+  min-width: 250px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #bbb;
+}
+
+.phone-link {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #bbb;
+  text-decoration: underline;
+  white-space: nowrap;
+  flex: 0 0 auto;
+  margin-top: 0.5rem;
+}
+
+.phone-link:hover,
+.phone-link:focus {
+  color: #eee;
+  outline: none;
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  align-items:stretch;
+}
+
+.image-gallery img {
+  width: auto;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  object-fit: contain;
+}
+
+/* About service text */
+.about-service p {
+  font-style: italic;
+  font-size: 1.05rem;
+  font-weight: 600;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Service icons grid */
+.service-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  color: #bbb;
+  font-style: italic;
+  font-size: 0.9rem;
+  cursor: default;
+  transition: color 0.3s ease;
+  text-align: center;
+  gap: 0.4rem;
+}
+
+.service-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.5rem;
+  border: 2px solid #888;
+}
+
+.service-item:hover,
+.service-item:focus-within {
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-gallery img {
+    width: 100%;
+  }
+
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-title {
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .phone-link {
+    white-space: normal;
+  }
+
+  .service-icons {
+    gap: 1.5rem;
+  }
+
+  .service-item {
+    width: 70px;
+    font-size: 0.85rem;
+  }
+
+  .service-item img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .service-item {
+    width: 60px;
+    font-size: 0.8rem;
+  }
+
+  .service-item img {
+    width: 50px;
+    height: 50px;
+  }
+} 
