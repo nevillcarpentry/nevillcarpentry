@@ -79,6 +79,14 @@ h1 {
   object-fit: contain;
 }
 
+.image-gallery.has-hover-img {  
+  border-radius: 5px;
+}
+
+.image-gallery .grid-item .grid-image {
+  overflow: hidden !important;
+}
+
 /* About service text */
 .about-service p {
   font-style: italic;
