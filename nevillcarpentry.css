@@ -72,19 +72,18 @@ h1 {
 }
 
 .image-gallery img {
-  width: auto;
-  height: 300px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  object-fit: contain;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  object-fit:fill;
 }
 
-.image-gallery.has-hover-img {  
-  border-radius: 5px;
-}
-
-.image-gallery .grid-item .grid-image {
-  overflow: hidden !important;
+@media screen and (max-width: 768px) {
+    .image-gallery img {
+      width: 20rem;
+      height: 30rem;
+    }
 }
 
 /* About service text */
