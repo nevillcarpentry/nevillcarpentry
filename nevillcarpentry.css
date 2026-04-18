@@ -25,7 +25,7 @@ header {
   padding-top: 0;
   margin-bottom: 2rem;
   margin-top: 0;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   background:#2e2e2e;
 }
 
