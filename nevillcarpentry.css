@@ -27,8 +27,6 @@ header {
   margin-top: 0;
   flex-wrap: nowrap;
   background:#2e2e2e;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .logo-title {
