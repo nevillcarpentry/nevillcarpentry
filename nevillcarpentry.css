@@ -133,7 +133,7 @@ h1 {
   border: 2px solid #888;
 }
 
-.service-item:hover,
+
 .service-item:focus-within {
   color: #fff;
 }
